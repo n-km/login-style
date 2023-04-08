@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark & White</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+        .info {
+            float: right;
+        }
+        .info a {
+            color: rgb(179, 179, 179);
+            font-size: 20px;
+        }
+        .info a:hover {
+            color: rgb(235, 170, 170);
+        }
+        .mode {
+            float: left;
+            display: table;
+            position: fixed;
+        }
+        .mode button {
+            border-radius: 0px;
+            background-color: white;
+            border-width: 1px;
+            height: 70px;
+            width: 70px;
+            cursor: pointer;
+        }
+        .mode button:hover {
+            border-radius: 100%;
+            transition: 0.5s;
+        }
+        .mode button:focus {
+            height: 80px;
+            width: 80px;
+            border-radius: 100%;
+            background-color: black;
+            color: white;
+            transition: 0.4s;
+            border-width: 0px;
+            border-color: black;
+        }
+        .login {
+            display: table;
+        }
+        input {
+        background-color: whitesmoke;
+        color: rgb(179, 179, 179);
+        border-radius: 0px;
+        border-color: rgb(0, 110, 255);
+        border-width: 1px;
+        font-family: arial;
+        margin-left: 50px;
+        font-size: medium;
+        outline: none;
+        
+      }
+      input:focus {
+        background-color: rgba(0, 110, 255, 0.11);
+      }
+      p {
+        color: rgb(0, 110, 255);
+        font-size: 20px;
+      }
+    </style>
+</head>
+<body>
+    <div class="info"><a href="">logout</a>
+    <br> <a href="">Back</a>
+    </div>
+<center>
+    <p>Login</p>
+    <footer></footer>
+    <div class="login">
+        <form action="###">
+            <input placeholder="Username" type="text">
+            <br><br>
+            <input placeholder="E-Mail" type="email">
+            <br><br>
+            <input placeholder="Password" type="password">
+            <br><br>
+            <input placeholder="Date" type="date">
+            <br><br>
+            <input type="submit">
+            <br>
+            <br>
+        </form>
+    </div>
+    <div class="mode">
+        <button type="button" onclick="body.style.background = 'black' ">Dark-mode</button>
+        <br><br>
+    <button type="button" onclick="body.style.background = 'white' ">White-mode</button>
+    </div>
+</center>
+</body>
+</html>
