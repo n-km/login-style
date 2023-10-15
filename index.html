@@ -2,101 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark & White</title>
+    <title>Document</title>
     <style>
-        body {
+        body{
             font-family: arial;
+            background-color: #444;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
-        .info {
-            float: right;
-        }
-        .info a {
-            color: rgb(179, 179, 179);
-            font-size: 20px;
-        }
-        .info a:hover {
-            color: rgb(235, 170, 170);
-        }
-        .mode {
-            float: left;
-            display: table;
+        .dock{
+            background-color: rgba(8, 8, 8, 0.538);
             position: fixed;
-        }
-        .mode button {
-            border-radius: 0px;
-            background-color: white;
-            border-width: 1px;
-            height: 70px;
-            width: 70px;
-            cursor: pointer;
-        }
-        .mode button:hover {
-            border-radius: 100%;
-            transition: 0.5s;
-        }
-        .mode button:active {
-            height: 80px;
-            width: 80px;
-            border-radius: 100%;
-            background-color: black;
+            top: 20%;
+            left: 15%;
+            right: 15%;
+            bottom: auto;
+            width: 70%;
+            height: 50%;
+            border-radius: 15px;
             color: white;
-            transition: 0.4s;
-            border-width: 0px;
-            border-color: black;
         }
-        .login {
-            display: table;
+        .dock button {
+            height: 60px;
+            width: 70px;
+            font-size: 20px;
+            border-radius: 10px;
+            border-width: 0px;
+            background-color: transparent;
+            transition: 0.2s;
+            margin-top: 5px;
+        }
+        .dock button:hover {
+            box-shadow: 0 0 2px 2px rgb(43, 43, 43);
+            background-color: rgba(255, 255, 255, 0.374);
+            height: 60px;
+            margin-top: 5px;
         }
         input {
-        background-color: whitesmoke;
-        color: rgb(179, 179, 179);
-        border-radius: 0px;
-        border-color: rgb(0, 110, 255);
-        border-width: 1px;
-        font-family: arial;
-        margin-left: 50px;
-        font-size: medium;
-        outline: none;
-        
-      }
-      input:focus {
-        background-color: rgba(0, 110, 255, 0.11);
-      }
-      p {
-        color: rgb(0, 110, 255);
-        font-size: 20px;
-      }
+            outline: none;
+            margin-top: 1cm;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: 0px;
+        }
     </style>
 </head>
 <body>
-    <div class="info"><a href="">logout</a>
-    <br> <a href="">Back</a>
-    </div>
-<center>
-    <p>Login</p>
-    <footer></footer>
-    <div class="login">
-        <form action="###">
-            <input placeholder="Username" type="text">
-            <br><br>
-            <input placeholder="E-Mail" type="email">
-            <br><br>
-            <input placeholder="Password" type="password">
-            <br><br>
-            <input placeholder="Date" type="date">
-            <br><br>
-            <input type="submit">
-            <br>
-            <br>
-        </form>
-    </div>
-    <div class="mode">
-        <button type="button" onclick="body.style.background = 'black' ">Dark-mode</button>
-        <br><br>
-    <button type="button" onclick="body.style.background = 'white' ">White-mode</button>
-    </div>
-</center>
+    <center>
+        <div class="dock">
+            <center>
+                <h1>Login</h1>
+                <br>
+                <form action="ul.html">
+                    <input type="text" placeholder="Username" required>
+                    <br>
+                    <input type="email" placeholder="E-Mail" required>
+                    <br>
+                    <input type="password" placeholder="Password" required>
+                    <br>
+                    <input type="submit">
+                </form>
+            </center>
+        </div>
+    </center>
 </body>
+
 </html>
